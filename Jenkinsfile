@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                gradle -version
+               'gradle -version'
             }
         }
     }
