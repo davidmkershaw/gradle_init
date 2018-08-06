@@ -1,13 +1,12 @@
 pipeline {
     agent {
-        docker { image 'java:7' }
+        docker { image 'node:7-alpine' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'java -version'
+                sh 'node --version'
             }
         }
     }
 }
-
