@@ -1,4 +1,4 @@
-peline {
+pipeline {
     agent {
         docker { image 'java:7' }
     }
