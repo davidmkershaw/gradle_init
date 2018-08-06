@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image 'gradle:jre10' }
+        docker { image 'gradle:alpine' }
     }
     stages {
         stage('Test') {
             steps {
-               'gradle -version'
+               gradle -v
             }
         }
     }
