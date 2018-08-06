@@ -1,21 +1,13 @@
-pipeline {
-    agent any
-
+peline {
+    agent {
+        docker { image 'java:7' }
+    }
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
         stage('Test') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh 'java --version'
             }
         }
     }
 }
+
