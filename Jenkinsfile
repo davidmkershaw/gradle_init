@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-               gradle -v
+               sh 'echo hi'
             }
         }
     }
